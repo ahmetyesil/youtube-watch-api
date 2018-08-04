@@ -1,0 +1,24 @@
+{
+  "name": "youtube-watch-api",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/ahmetyesil/youtube-watch-api.git",
+  "author": "argebynogame <arge@bynogame.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.0.37",
+    "@types/express-serve-static-core": "^4.0.50",
+    "@types/node": "^7.0.7",
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.6",
+    "typescript": "^2.2.2"
+  },
+  "scripts": {
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/app.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\""
+  }
+}

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var bookSchema_1 = require("../model/bookSchema");
+var bookSchema_1 = require("../schema/bookSchema");
 // - GET - /books # return all books
 exports.allBook = function (req, res) {
     var books = bookSchema_1.default.find(function (err, books) {

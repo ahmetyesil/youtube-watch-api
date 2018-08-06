@@ -25,7 +25,7 @@ exports.verifyToken = function (req, res, next) {
         next();
     }
     else {
-        res.sendStatus(403);
+        res.sendStatus(401);
     }
 };
 //# sourceMappingURL=loginController.js.map

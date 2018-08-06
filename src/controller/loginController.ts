@@ -26,7 +26,7 @@ export let verifyToken = (req, res, next) => {
         req.token = bearerToken;
         next();
     } else {
-        res.sendStatus(403);
+        res.sendStatus(401);
     }
 }
 
